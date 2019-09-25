@@ -31,7 +31,6 @@ export default function PicList() {
         expl={pics.explanation}
         url={pics.url}
       />
-      ;
     </div>
   );
 }
