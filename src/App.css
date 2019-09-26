@@ -1,33 +1,60 @@
 .App {
+  width: 100%;
+  max-height: 100vh;
+  margin: 0 auto;
+  background: url("./images/night-sky.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  color: lightgrey;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column nowrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid red;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #070b34;
+  margin: 0;
+}
+.pic-card {
+  margin: 20px auto;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 0;
+  background: #666072;
+}
+.img {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expl {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #666072;
+}
+.footer {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #070b34;
+  margin: 0;
 }
