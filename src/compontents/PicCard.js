@@ -1,14 +1,16 @@
 import React from "react";
 import PicTitle from "./PicTitle";
-// import PicImage from "./PicImage";
+import PicImage from "./PicImage";
+import PicExp from "./PicExp";
 
-export default function Card({ title, date, expl, url }) {
+export default function PicCard({ title, date, expl, url }) {
+  console.log(`${url} - title from PicCard`);
   return (
     <div className="pic-card">
       <PicTitle title={title} />
-      {/* <PicImage src={url} /> */}
-      <img className="img" src={url} alt="nasa shot of the day" />
-      <div className="expl">{expl}</div>
+      <PicImage url={url} />
+      <PicExp expl={expl} />
+      {/* <div className="expl">{expl}</div> */}
     </div>
   );
 }

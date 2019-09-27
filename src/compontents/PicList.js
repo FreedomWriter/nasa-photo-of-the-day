@@ -8,7 +8,9 @@ export default function PicList() {
 
   useEffect(() => {
     axios
-      .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+      .get(
+        "https://api.nasa.gov/planetary/apod?api_key=Ou2QnLFt6enMC3ntomdPBUX0QMVoai9YRZvJTqlV"
+      )
       .then(result => {
         setPics(result.data);
       })
@@ -16,11 +18,12 @@ export default function PicList() {
         console.log(err);
       });
   }, []);
+  console.log(`${pics.expl} + from the PicList Component`);
   return (
     <div>
       <PicCard
         title={pics.title}
-        xdate={pics.date}
+        date={pics.date}
         expl={pics.explanation}
         url={pics.url}
       />
