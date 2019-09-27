@@ -18,7 +18,6 @@ export default function PicList() {
   }, []);
   return (
     <div>
-      {/* <PicTitle title={pics.title} /> */}
       <PicCard
         title={pics.title}
         xdate={pics.date}
