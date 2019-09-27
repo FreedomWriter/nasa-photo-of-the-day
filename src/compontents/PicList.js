@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PicCard from "./PicCard";
+// import PicTitle from "./PicTitle";
 
 export default function PicList() {
   const [pics, setPics] = useState([]);
@@ -17,6 +18,7 @@ export default function PicList() {
   }, []);
   return (
     <div>
+      {/* <PicTitle title={pics.title} /> */}
       <PicCard
         title={pics.title}
         xdate={pics.date}
