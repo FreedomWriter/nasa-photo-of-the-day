@@ -1,17 +1,17 @@
 .App {
   width: 100%;
+  max-width: 1200px;
   max-height: 100vh;
   margin: 0 auto;
-  background: url("./images/night-sky.jpeg") no-repeat center center fixed;
-  background-size: cover;
-  color: lightgrey;
-  text-align: center;
-  display: flex;
+
+  /* color: lightgrey; */
+  /* text-align: center; */
+  /* display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: center; */
 }
 
-.header {
+/* .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,8 +28,8 @@
   flex-flow: column nowrap;
   box-shadow: 3px 3px 5px 6px #ccc;
   color: #070b34;
-}
-.title {
+} */
+/* .title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,8 +37,8 @@
   margin: 0;
   background: #a3a2a0;
   font-size: 3rem;
-}
-.img {
+} */
+/* .img {
   width: 100%;
 }
 
@@ -56,4 +56,4 @@
   height: 150px;
   background: rgba(20, 24, 82, 0.85);
   margin: 0;
-}
+} */
